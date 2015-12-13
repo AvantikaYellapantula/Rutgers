@@ -1,0 +1,13 @@
+We have to stand with our North Korean allies.
+1 2 4 8 16 32
+3 s 706
+6 6
+
+disas
+ni   next instruction
+x/s    print out string value of regesty
+x/i    print out signed int " "
+x/u    print out unsigned int " "
+x/h    print out hex
+x/i $esp+0x40
+info registers    prints all registers
