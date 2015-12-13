@@ -1,0 +1,79 @@
+Note: all numbers are being inserted except if there is a 'R' in front on it. 
+
+TestCase 1:
+Input: 10 20 5 15 0 
+Output: 
+20.000000
+15.000000
+10.000000
+5.000000
+0.000000
+
+TestCase 2:
+Input: 34 66 22 78 3
+Output: 
+78.000000
+66.000000
+34.000000
+22.000000
+3.000000
+
+TestCase 3:
+Input: 67 88 89 899 890
+Output: 
+899.000000
+890.000000
+89.000000
+88.000000
+67.000000
+
+TestCase 4:
+Input: 1 2 3 4 5
+Output: 
+5.000000
+4.000000
+3.000000
+2.000000
+1.000000
+
+TestCase 5:
+Input: 5 4 3 2 1
+Output: 
+5.000000
+4.000000
+3.000000
+2.000000
+1.000000
+
+TestCase 6:
+Input: 10 20 5 15 0 R10 R5 R0
+Output: 
+20.000000
+15.000000
+
+TestCase 7:
+Input: 34 R34 66 22 78 3
+Output: 
+78.000000
+66.000000
+22.000000
+3.000000
+
+TestCase 8:
+Input: 67 88 89 899 R899 R89 890
+Output:
+67.000000 
+
+TestCase 9:
+Input: 1 2 3 4 5 R4 R2
+Output: 
+5.000000
+3.000000
+1.000000
+
+TestCase 10:
+Input: 5 4 3 2 1 R4 R2
+Output: 
+5.000000
+3.000000
+1.000000

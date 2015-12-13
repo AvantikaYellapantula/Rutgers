@@ -1,0 +1,197 @@
+***Please note that we also tested our code out using larger files and also using directories of files to produce much large outputs.
+
+
+
+
+Input: hh kk oo
+Output: {"list" : [
+	{"hh" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"kk" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"oo" : [
+		{"test/test5.txt" : 1}
+	]}
+]}
+
+
+Input: ew rf tt  ggt d s wwa a dd e
+output: {"list" : [
+	{"a" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"d" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"dd" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"e" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ew" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ggt" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"rf" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"s" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"tt" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"wwa" : [
+		{"test/test5.txt" : 1}
+	]}
+]}
+
+
+input: ew rf tt  ggt d s wwa a dd e 
+fg
+f
+g
+r5
+htg
+6462
+hth6 746 56 7 t
+
+
+Output: {"list" : [
+	{"56" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"6462" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"7" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"746" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"a" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"d" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"dd" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"e" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ew" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"f" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"fg" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"g" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ggt" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"htg" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"hth6" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"r5" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"rf" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"s" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"t" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"tt" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"wwa" : [
+		{"test/test5.txt" : 1}
+	]}
+]}
+
+
+Input: fdfdfd rert rt d ft d gfg r rt gasytujs dhaf ers
+fgfrt y yty
+Output: {"list" : [
+	{"d" : [
+		{"test/test5.txt" : 2}
+	]},
+	{"dhaf" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ers" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"fdfdfd" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"fgfrt" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ft" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"gasytujs" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"gfg" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"r" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"rert" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"rt" : [
+		{"test/test5.txt" : 2}
+	]},
+	{"y" : [
+		{"test/test5.txt" : 1}
+	]}
+]}
+
+
+Input: aa bb cc dd ss bb FF sFF FF
+Output: {"list" : [
+	{"aa" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"bb" : [
+		{"test/test5.txt" : 2}
+	]},
+	{"cc" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"dd" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ff" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"sff" : [
+		{"test/test5.txt" : 1}
+	]},
+	{"ss" : [
+		{"test/test5.txt" : 1}
+	]}
+]}

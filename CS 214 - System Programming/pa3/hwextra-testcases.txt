@@ -1,0 +1,32 @@
+INPUT: int y;
+  free(&y);
+OUTPUT: Error: Pointer Not Found In Dynamic Memory
+
+INPUT: char *t = malloc(4);
+  free(*t);
+OUTPUT: Error: Invalid Parameter Pointer In free(x)
+
+INPUT: char *t = malloc(4);
+  free(&t);
+OUTPUT: Error: Pointer Not Found In Memory
+
+INPUT: int *test = malloc(sizeof(int));
+  free(test);
+  free(test);
+OUTPUT:Error: Pointer Already Free
+
+INPUT: free(8);
+OUTPUT: Error: Pointer Not Found In Dynamic Memory
+
+INPUT: free(*8)
+OUTPUT: Error: Pointer Not Found In Dynamic Memory
+
+INPUT: int *test = malloc(sizeof(int));
+  free(test);
+OUTPUT:NO ERRORS
+
+INPUT: int y;
+  free(&y);
+  y = malloc(sizeof(int));
+  free(&y);
+OUTPUT: NO ERRORS

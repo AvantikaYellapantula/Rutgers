@@ -1,0 +1,50 @@
+INPUT: " array[xyz] += pi 3.14159e-10 "
+OUTPUT: word array
+        left brace [
+        word xyz 
+        right brace ]
+        plusequals +=
+        word pi
+        float 3.14159e-10
+
+INPUT: " today is a beautiful day "
+OUTPUT: word today
+        word is
+        word a
+        word beautiful
+        word day
+
+INPUT: "0344"
+OUTPUT: octal 0344
+
+INPUT: "344 545.545 0X434"
+OUTPUT: int 344
+        float 545.545
+        hex 0X434
+
+INPUT: "0x34ac5 dff += 43 ggf array[54]"
+OUTPUT: hex 0x34ac5
+        word dff
+        plusequals +=
+        int 43
+        word ggf
+        word array
+        left brace [
+        int 54
+        right brace ]
+
+INPUT: "fsdfd 3435 5 3 ddd 44"
+OUTPUT: word fsdfd
+        int 3435
+        digit 5
+        digit 3
+        word ddd
+        int 44
+
+INPUT: "0 dfd 433 4.345e10"
+OUTPUT: zero 0
+        word dfd
+        int 433
+        float .345e10
+
+./tokenizer "4.554e-10 ttr 45 [5454] gf"

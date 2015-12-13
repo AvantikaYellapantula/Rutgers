@@ -1,0 +1,14 @@
+The,a,b,c,d,e,f
+Then,a,b,c,d,e,f,
+Where,g,h,i,j,k
+Fine,g,h,i,j,k
+Only,a,g,c,i,f,k
+Once,a,g,c,i,f,k
+Important,a,a,a,a,a,a
+Not Important,b,b,b,b,b,
+
+
+
+
+Checking This Wide Gape Of A Space
+THIS REALLY IS ALL CAPS

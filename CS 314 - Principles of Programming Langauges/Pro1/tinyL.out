@@ -1,0 +1,31 @@
+loadI 1024 => r0
+loadI 1 => r1
+storeAI r1 => r0, 0
+loadI 2 => r2
+storeAI r2 => r0, 4
+loadI 3 => r3
+storeAI r3 => r0, 8
+loadI 4 => r4
+storeAI r4 => r0, 12
+loadI 5 => r5
+storeAI r5 => r0, 16
+loadI 6 => r6
+storeAI r6 => r0, 20
+loadI 7 => r7
+storeAI r7 => r0, 24
+loadI 8 => r8
+storeAI r8 => r0, 28
+loadI 9 => r9
+storeAI r9 => r0, 32
+loadI 0 => r10
+storeAI r10 => r0, 36
+loadI 1 => r11
+storeAI r11 => r0, 40
+loadI 2 => r12
+storeAI r12 => r0, 44
+loadI 3 => r13
+storeAI r13 => r0, 48
+loadI 4 => r14
+storeAI r14 => r0, 52
+outputAI r0, 0
+outputAI r0, 52
