@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.userController">
+   <children>
+      <AnchorPane prefHeight="360.0" prefWidth="536.0" style="-fx-background-color: C7B4C8;">
+         <children>
+            <ListView fx:id="userList" layoutX="279.0" layoutY="39.0" prefHeight="248.0" prefWidth="187.0" />
+            <PasswordField fx:id="passInput" layoutX="79.0" layoutY="98.0" />
+            <Label fx:id="nameLab" layoutX="37.0" layoutY="44.0" text="Name" />
+            <Label fx:id="PWInput" layoutX="14.0" layoutY="103.0" text="Password" />
+            <Button fx:id="addBut" layoutX="37.0" layoutY="204.0" mnemonicParsing="false" onAction="#addUser" prefHeight="31.0" prefWidth="65.0" text="Add" />
+            <Button fx:id="deleteBut" layoutX="207.0" layoutY="204.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="31.0" prefWidth="65.0" text="Delete" />
+            <Button fx:id="editBut" layoutX="123.0" layoutY="204.0" mnemonicParsing="false" onAction="#editUser" prefHeight="31.0" prefWidth="65.0" text="Edit" />
+            <Button fx:id="saveBut" layoutX="79.0" layoutY="272.0" mnemonicParsing="false" onAction="#saveUsers" prefHeight="31.0" prefWidth="65.0" text="Save" />
+            <Button fx:id="cancelBut" layoutX="175.0" layoutY="272.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="65.0" text="Cancel" />
+            <TextField fx:id="nameInput" layoutX="79.0" layoutY="39.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

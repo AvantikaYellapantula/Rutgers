@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.albumController">
+  <items>
+    <AnchorPane fx:id="splitTop" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="895.0" style="-fx-background-color: BLACK;" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="searchBut" layoutX="576.0" layoutY="2.0" mnemonicParsing="false" onAction="#searchACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Search" textFill="WHITE" />
+            <Button fx:id="deleteBut" layoutX="192.0" layoutY="2.0" mnemonicParsing="false" onAction="#deleteACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Delete" textFill="WHITE" />
+            <Button fx:id="renameBut" layoutX="320.0" layoutY="2.0" mnemonicParsing="false" onAction="#renameACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Rename" textFill="WHITE" />
+            <Button fx:id="addBut" alignment="CENTER" layoutX="64.0" layoutY="2.0" mnemonicParsing="false" onAction="#addACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Add" textFill="WHITE" />
+            <Button fx:id="openBut" layoutX="448.0" layoutY="2.0" mnemonicParsing="false" onAction="#openACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Open" textFill="WHITE" />
+            <Button fx:id="exitBut" layoutX="704.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeACT" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #303030; -fx-font-weight: Bold; -fx-border-color: #FFFFFF;" text="Exit" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="albumView" blendMode="HARD_LIGHT" prefHeight="410.0" prefWidth="895.0" style="-fx-background-color: #323836;" SplitPane.resizableWithParent="false">
+         <children>
+            <ListView fx:id="List" layoutY="10.0" prefHeight="510.0" prefWidth="895.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

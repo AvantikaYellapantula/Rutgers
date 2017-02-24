@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5, 0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.pictureController">
+  <items>
+    <AnchorPane fx:id="splitTop" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="895.0" style="-fx-background-color: BLACK;" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="openBut" layoutX="70.0" layoutY="1.0" mnemonicParsing="false" onAction="#openACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Open" textFill="#fff9f9" />
+            <Button fx:id="exitBut" layoutX="718.0" layoutY="1.0" mnemonicParsing="false" onAction="#closeACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Close" textFill="#fff9f9" />
+            <Button fx:id="addBut" layoutX="178.0" mnemonicParsing="false" onAction="#addACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Add" textFill="#fff9f9" />
+            <Button fx:id="deleteBut" layoutX="286.0" mnemonicParsing="false" onAction="#deleteACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Remove" textFill="#fff9f9" />
+            <Button fx:id="captionBut" layoutX="394.0" mnemonicParsing="false" onAction="#captionACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Caption" textFill="#fff9f9" />
+            <Button fx:id="addTagBut" layoutX="502.0" layoutY="1.0" mnemonicParsing="false" onAction="#addTagACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Add Tag" textFill="#fff9f9" />
+            <Button fx:id="removeTagBut" layoutX="610.0" layoutY="1.0" mnemonicParsing="false" onAction="#removeTagACT" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: #000000;" text="Remove Tag" textFill="#fff9f9" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="albumView" blendMode="HARD_LIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="898.0" style="-fx-background-color: #323836;" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="copyBut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#copyACT" style="-fx-background-color: #000000;" text="Copy To Another Album" textFill="WHITE" />
+            <Button fx:id="moverBut" layoutX="699.0" layoutY="14.0" mnemonicParsing="false" onAction="#moveACT" style="-fx-background-color: #000000;" text="Move To Another Album" textFill="WHITE" />
+         </children></AnchorPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="391.0" prefWidth="898.0" SplitPane.resizableWithParent="false">
+         <content>
+            <TilePane fx:id="List" prefHeight="475.0" prefWidth="878.0" style="-fx-background-color: #323836;" />
+         </content>
+      </ScrollPane>
+  </items>
+</SplitPane>

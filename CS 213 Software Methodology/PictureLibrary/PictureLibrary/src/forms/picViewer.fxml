@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.3694581280788177" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.picViewerController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <ListView fx:id="tags" layoutX="505.0" layoutY="14.0" prefHeight="193.0" prefWidth="379.0" />
+            <Label fx:id="date" layoutX="28.0" layoutY="25.0" prefHeight="44.0" prefWidth="468.0" text="Label" />
+            <Label fx:id="caption" layoutX="28.0" layoutY="152.0" prefHeight="44.0" prefWidth="468.0" text="Label" />
+            <Button fx:id="prev" layoutX="91.0" layoutY="98.0" mnemonicParsing="false" onAction="#prevACT" text="Prev" />
+            <Button fx:id="next" layoutX="358.0" layoutY="96.0" mnemonicParsing="false" onAction="#nextACT" text="Next" />
+            <Button fx:id="Close" layoutX="210.0" layoutY="98.0" mnemonicParsing="false" onAction="#closeACT" text="Close" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="347.0" fitWidth="873.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

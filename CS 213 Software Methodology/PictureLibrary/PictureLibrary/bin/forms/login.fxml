@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.login_controller">
+   <children>
+      <Button fx:id="OKBut" layoutX="106.0" layoutY="131.0" mnemonicParsing="false" onAction="#verifyName" prefHeight="31.0" prefWidth="64.0" text="OK" />
+      <Button fx:id="cancelBut" layoutX="301.0" layoutY="131.0" mnemonicParsing="false" onAction="#exit" text="Cancel" />
+      <TextField fx:id="UNInput" layoutX="159.0" layoutY="46.0" prefHeight="31.0" prefWidth="233.0" />
+      <PasswordField fx:id="passwordInput" layoutX="159.0" layoutY="91.0" prefHeight="31.0" prefWidth="233.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="51.0" prefHeight="21.0" prefWidth="81.0" text="User Name" />
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="96.0" prefHeight="21.0" prefWidth="81.0" text="Password" />
+   </children>
+</AnchorPane>

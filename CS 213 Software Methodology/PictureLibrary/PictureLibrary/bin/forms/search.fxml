@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.3694581280788177" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.searchController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="search" layoutX="797.0" layoutY="39.0" mnemonicParsing="false" onAction="#searchACT" text="Search" />
+            <Button fx:id="close" layoutX="800.0" layoutY="170.0" mnemonicParsing="false" onAction="#closeACT" text="Close" />
+            <ChoiceBox fx:id="tag" layoutX="57.0" layoutY="39.0" prefHeight="25.0" prefWidth="267.0" />
+            <TextField fx:id="value" layoutX="354.0" layoutY="39.0" prefHeight="25.0" prefWidth="373.0" />
+            <TextField fx:id="caption" layoutX="55.0" layoutY="170.0" prefHeight="25.0" prefWidth="674.0" />
+            <Label layoutX="57.0" layoutY="14.0" text="1: Tag Search" />
+            <Label layoutX="55.0" layoutY="145.0" text="3: Caption Search" />
+            <Label layoutX="55.0" layoutY="85.0" text="2: Date Search" />
+            <Label layoutX="386.0" layoutY="113.0" text="to" />
+            <Button fx:id="makeAlbum" layoutX="779.0" layoutY="109.0" mnemonicParsing="false" onAction="#createAlbumACT" text="Create Album" />
+            <DatePicker fx:id="dateStart" layoutX="57.0" layoutY="109.0" prefHeight="25.0" prefWidth="296.0" />
+            <DatePicker fx:id="dateEnd" layoutX="433.0" layoutY="109.0" prefHeight="25.0" prefWidth="296.0" />
+            <Label layoutX="428.0" layoutY="14.0" text="Search by only one of three ways at a time" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TilePane fx:id="list" layoutX="14.0" layoutY="14.0" prefHeight="344.0" prefWidth="870.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

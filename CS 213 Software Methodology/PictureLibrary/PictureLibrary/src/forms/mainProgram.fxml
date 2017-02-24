@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.24582701062215478" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="661.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.programController">
+  <items>
+    <AnchorPane fx:id="splitTop" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="156.0" prefWidth="821.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="Open" layoutX="128.0" mnemonicParsing="false" onAction="#openACT" text="Open" />
+            <Button fx:id="Search" layoutX="449.0" layoutY="47.0" mnemonicParsing="false" onAction="#searchACT" text="Search" />
+            <Button fx:id="Delete" layoutX="121.0" layoutY="77.0" mnemonicParsing="false" onAction="#deleteACT" text="Delete" />
+            <Button fx:id="New" layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#newACT" text="New" />
+            <Button fx:id="Rename" layoutX="254.0" layoutY="77.0" mnemonicParsing="false" onAction="#renameACT" text="Rename" />
+            <Button fx:id="Save_Exit" layoutX="593.0" layoutY="47.0" mnemonicParsing="false" onAction="#saveData" text="Save and Exit" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="splitBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="821.0" SplitPane.resizableWithParent="false">
+         <children>
+            <ListView fx:id="albums" layoutX="6.0" layoutY="13.0" prefHeight="482.0" prefWidth="807.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

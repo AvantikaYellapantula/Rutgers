@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songs.Controller">
+   <children>
+      <Button fx:id="Exit" layoutX="677.0" layoutY="714.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+      <Button fx:id="Edit" layoutX="665.0" layoutY="58.0" mnemonicParsing="false" onAction="#Edit" text="Edit" />
+      <Button fx:id="Add" layoutX="664.0" layoutY="200.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+      <Button fx:id="Delete" layoutX="653.0" layoutY="355.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+      <Button fx:id="Save" layoutX="347.0" layoutY="576.0" mnemonicParsing="false" onAction="#Save" prefHeight="31.0" prefWidth="108.0" text="Save Song" visible="false" />
+      <Button fx:id="SaveAdd" layoutX="348.0" layoutY="529.0" mnemonicParsing="false" onAction="#SaveAdd" prefHeight="31.0" prefWidth="108.0" text="Add Song" visible="false" />
+      <Button fx:id="Cancel" layoutX="348.0" layoutY="621.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="31.0" prefWidth="108.0" text="Cancel" visible="false" />
+      <TextField fx:id="Title" editable="false" layoutX="14.0" layoutY="481.0" />
+      <TextField fx:id="Artist" editable="false" layoutX="14.0" layoutY="560.0" />
+      <TextField fx:id="Album" editable="false" layoutX="14.0" layoutY="636.0" />
+      <TextField fx:id="Year" editable="false" layoutX="14.0" layoutY="714.0" />
+      <ListView fx:id="List" layoutX="14.0" layoutY="54.0" onMouseClicked="#onListSelection" prefHeight="403.0" prefWidth="567.0" />
+   </children>
+</AnchorPane>
